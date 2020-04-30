@@ -1,6 +1,6 @@
 FROM gitpod/workspace-full-vnc
 USER root
-RUN apt update && apt install build-essential cmake cmake-data debhelper dbus google-mock \
+RUN apt update -q && apt install -yq build-essential cmake cmake-data debhelper dbus google-mock \
     libboost-dev libboost-filesystem-dev libboost-log-dev libboost-iostreams-dev \
     libboost-program-options-dev libboost-system-dev libboost-test-dev \
     libboost-thread-dev libcap-dev libsystemd-dev libegl1-mesa-dev \
